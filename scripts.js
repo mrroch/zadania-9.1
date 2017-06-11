@@ -4,12 +4,10 @@ var triangle3Area = getTriangleArea(3, 20);
 
 function getTriangleArea(a, h) {
 
-    if (a <= 0) {
-        console.log('invalid data');
-    }
-    else if (h <= 0) {
-        console.log('invalid data');
-    }
+    if (a <= 0 || h <= 0)
+    
+    return 'invalid data';
+    
     return a*h/2;
 }
 
